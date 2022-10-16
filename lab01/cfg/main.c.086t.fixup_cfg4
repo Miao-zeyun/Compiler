@@ -1,0 +1,150 @@
+
+;; Function add (add, funcdef_no=0, decl_uid=2249, cgraph_uid=0, symbol_order=0)
+
+add (int x, int y)
+{
+  int result;
+  int D.2275;
+  int _4;
+
+  <bb 2> [0.00%]:
+  result_3 = x_1(D) + y_2(D);
+  _4 = result_3;
+
+<L0> [0.00%]:
+  return _4;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1, decl_uid=2252, cgraph_uid=1, symbol_order=1)
+
+main ()
+{
+  int j;
+  int k;
+  int j;
+  int array[15];
+  int t;
+  int i;
+  int b;
+  int a;
+  const int num;
+  int y;
+  int x;
+  int D.2279;
+  int y.0_1;
+  int x.1_2;
+  int y.2_3;
+  int x.3_4;
+  int _5;
+  int y.4_6;
+  int x.5_7;
+  int _8;
+  unsigned int j.6_9;
+  unsigned int _10;
+  int _11;
+  int _45;
+
+  <bb 2> [0.00%]:
+  __builtin_puts (&"compile project(test)"[0]);
+  printf ("file:%s\n", "main.c");
+  printf ("date:%s\n", "Oct  8 2022");
+  printf ("time:%s\n", "12:15:45");
+  __builtin_puts (&"Please input x and y:"[0]);
+  scanf ("%d%d", &x, &y);
+  y.0_1 = y;
+  x.1_2 = x;
+  printf ("x=%d, y=%d\n", x.1_2, y.0_1);
+  y.2_3 = y;
+  x.3_4 = x;
+  _5 = MAX_EXPR <y.2_3, x.3_4>;
+  printf ("MAX number=%d\n", _5);
+  y.4_6 = y;
+  x.5_7 = x;
+  _8 = add (x.5_7, y.4_6);
+  printf ("add result=%d\n", _8);
+  num_34 = 10;
+  a_35 = 0;
+  b_36 = 1;
+  i_37 = 1;
+  printf ("fibonacci sequence:%d %d", a_35, b_36);
+  goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  t_54 = b_13;
+  b_55 = a_12 + b_13;
+  printf (" %d", b_55);
+  a_57 = t_54;
+  i_58 = i_14 + 1;
+
+  <bb 4> [0.00%]:
+  # a_12 = PHI <a_35(2), a_57(3)>
+  # b_13 = PHI <b_36(2), b_55(3)>
+  # i_14 = PHI <i_37(2), i_58(3)>
+  if (i_14 < num_34)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
+
+  <bb 5> [0.00%]:
+  __builtin_putchar (10);
+  j_40 = 0;
+  k_41 = 0;
+  goto <bb 9>; [0.00%]
+
+  <bb 6> [0.00%]:
+  j.6_9 = (unsigned int) j_15;
+  _10 = j.6_9 & 1;
+  if (_10 == 0)
+    goto <bb 7>; [0.00%]
+  else
+    goto <bb 8>; [0.00%]
+
+  <bb 7> [0.00%]:
+  array[k_17] = j_15;
+  k_52 = k_17 + 1;
+
+  <bb 8> [0.00%]:
+  # k_16 = PHI <k_17(6), k_52(7)>
+  j_53 = j_15 + 1;
+
+  <bb 9> [0.00%]:
+  # j_15 = PHI <j_40(5), j_53(8)>
+  # k_17 = PHI <k_41(5), k_16(8)>
+  if (j_15 <= 29)
+    goto <bb 6>; [0.00%]
+  else
+    goto <bb 10>; [0.00%]
+
+  <bb 10> [0.00%]:
+  printf ("array:");
+  j_43 = 0;
+  goto <bb 12>; [0.00%]
+
+  <bb 11> [0.00%]:
+  _11 = array[j_18];
+  printf ("%d ", _11);
+  j_50 = j_18 + 1;
+
+  <bb 12> [0.00%]:
+  # j_18 = PHI <j_43(10), j_50(11)>
+  if (j_18 <= 14)
+    goto <bb 11>; [0.00%]
+  else
+    goto <bb 13>; [0.00%]
+
+  <bb 13> [0.00%]:
+  __builtin_putchar (10);
+  _45 = 0;
+  x ={v} {CLOBBER};
+  y ={v} {CLOBBER};
+  array ={v} {CLOBBER};
+
+<L12> [0.00%]:
+  return _45;
+
+}
+
+
